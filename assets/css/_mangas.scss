@@ -1,0 +1,106 @@
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------   Page Mangas (ArticleBundle - index.html.twig)   ----------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.my_slider{
+  margin-top: 120px;
+}
+/* Options Slider */
+.bx-wrapper {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  background: #fff;
+  margin-top: 0px;
+}
+.title {
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+/* Create display for use function back up top */
+.scrollup {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  //background: url('../img/fleche-vers-le-haut.png') no-repeat;
+  //background: url('../../src/ArticleBundle/Resources/public/img/fleche-vers-le-haut.png') no-repeat;
+  background-color: #ec1303;
+  background-size: cover;
+  z-index: 1000;
+}
+
+.create_article{
+  width: 274px;
+  height: 80px;
+  margin-left: 9%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.create_article:hover{
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.count_article{
+  font-style: italic;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+/*--------------------------------------------------- Article----------------------------------------------------------*/
+
+.container-mangas{
+  background-color: gainsboro;
+}
+/*---------------------------------------------------------------*/
+/* Option Title article*/
+
+.title_article:hover{
+
+  white-space: initial;
+}
+
+.title_article:first-letter{
+
+  text-transform:capitalize;
+}
+.title_article{
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 77px;
+  font-size: 32px;
+
+}
+/*---------------------------------------------------------------*/
+
+.img_article{
+  height: 220px;
+}
+
+.title_article_h4{
+  margin-bottom: 20px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.my_pagination{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+

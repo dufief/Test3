@@ -1,0 +1,398 @@
+body{
+    margin: 0;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+                                    /* ------ Header (MaPageBundle) ------ */
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /* Forced opacity in background color*/
+    background-color: rgba(245, 179, 53, 0.5);
+    /* Tempo appearance and disappear of header*/
+    transition: top 0.5s ease-in-out;
+}
+/* Make disappear the header */
+.nav-up {
+    top: -100px;
+}
+
+.header-img {
+    height: 63px;
+    width: 183px;
+    position: absolute;
+    left: 28px;
+    top: 27px;
+    background: url(../img/LaPiscine_Bordeaux.png) no-repeat;
+}
+
+/*--------------------------------------------------- NavBar ----------------------------------------------------------*/
+
+.navbar-menu {
+    float: right;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.navbar-menu .container-ul {
+    display: flex;
+}
+.navbar-menu .container-ul .menu {
+    flex: 1;
+    text-align: center;
+    list-style: none;
+}
+.navbar-menu .container-ul .menu .menu-lien {
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: 1s;
+}
+.navbar-menu .container-ul .menu .menu-lien:hover {
+    font-size: 30px;
+    color: black;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+                                            /* Page Accueil (MaPageBundle) */
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+img {
+    max-width: 100%;
+    height: auto; }
+
+/*--------------------------------------------------- Article----------------------------------------------------------*/
+
+.container-article {
+    width: 48%;
+    height: 100vh;
+    margin-top: 120px;
+    margin-left: 20px;
+    float: left;
+    position: relative;
+    }
+
+.article-index {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+
+.small-articles {
+    display: flex;
+    margin-top: 500px;
+}
+
+.description-article {
+    position: absolute;
+    top: 61%;
+    left: 18%;
+    font-size: 49px;
+    color: #e3f50d;
+}
+
+.article-small {
+    float: left;
+    position: relative;
+    width: 220px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 10px; }
+
+/*--------------------------------------------------- Mangas ----------------------------------------------------------*/
+
+.texte-img-soul {
+    position: absolute;
+    top: 37px;
+    left: 67px;
+    color: #ec1303;
+    font-family: 'Kavivanar', cursive;
+}
+
+.texte-img-bStar {
+    position: absolute;
+    top: -7px;
+    left: 67px;
+    color: #ec1303;
+    font-family: 'Kavivanar', cursive;
+}
+
+.texte-img-maka {
+    position: absolute;
+    top: -7px;
+    left: 22px;
+    color: #ec1303;
+    font-family: 'Kavivanar', cursive;
+}
+
+.article-mangas {
+    background: url(../img/Soul-Eater-Wallpaper-Background-Windows-Anime.jpg) no-repeat;
+    background-position: 59%;
+    background-size: 112%;
+}
+
+/*------------------------------------------------------ Jeux ----------------------------------------------------------*/
+
+.article-jeux {
+    background: url(../img/leagueoflegend-nash.jpg) no-repeat;
+    background-position: 59%;
+    background-size: 125%;
+}
+
+.article-img-jeux {
+    position: absolute;
+    top: 10px;
+    left: 31%;
+    width: 252px;
+    height: 50px;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(22%, 50%);
+    color: white;
+    font-family: 'Kavivanar', cursive;
+}
+
+.texte-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-family: 'Kavivanar', cursive;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+                                /* Page Mangas (ArticleBundle - index.html.twig)*/
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.my_slider{
+    margin-top: 120px;
+}
+/* Options Slider */
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    margin-top: 0px;
+}
+.title {
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 20px; }
+
+/* Create display for use function back up top */
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../img/fleche-vers-le-haut.png') no-repeat;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.create_article{
+    width: 274px;
+    height: 80px;
+    margin-left: 9%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.create_article:hover{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.count_article{
+    font-style: italic;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+/*--------------------------------------------------- Article----------------------------------------------------------*/
+
+.container-mangas{
+    background-color: gainsboro;
+}
+                        /*---------------------------------------------------------------*/
+                                            /* Option Title article*/
+
+.title_article:hover{
+
+    white-space: initial;
+}
+
+.title_article:first-letter{
+
+    text-transform:capitalize;
+}
+.title_article{
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 77px;
+    font-size: 32px;
+
+}
+                        /*---------------------------------------------------------------*/
+
+.img_article{
+    height: 220px;
+}
+
+.title_article_h4{
+    margin-bottom: 20px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.my_pagination{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+                                    /* Form (ArticleBundle - form.html.twig) */
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.title-form{
+    text-align: center;
+    margin-top: 120px;
+}
+.container_form{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: gainsboro;
+    margin-bottom: 120px;
+}
+
+.div_form{
+    width: 80%;
+    margin-left: auto;
+    padding: 20px 0 20px 0;
+}
+
+.label_label{
+
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+.widget_widget{
+
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.div_form_submit{
+    display: flex;
+    justify-content: center;
+}
+.widget_submit{
+    margin: 20px 0 20px 0;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.widget_synopsis{
+    height: 200px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+                            /* Maintenance (ArticleBundle - maintenance.html.twig) */
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.title_maintenance{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.img_maintenance{
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+                                    /* Footer (MaPageBundle - footer.html.twig) */
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.container_footer{
+    clear: both;
+
+}
+
+.footer{
+    margin-top: 100px;
+    height: 100px;
+    position: relative;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.paragraphe_footer{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

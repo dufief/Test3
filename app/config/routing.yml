@@ -1,0 +1,11 @@
+article:
+    resource: "@ArticleBundle/Resources/config/routing.xml"
+    prefix:   article/
+
+ma_page:
+    resource: "@MaPageBundle/Resources/config/routing.xml"
+    prefix:   mapage/
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

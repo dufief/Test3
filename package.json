@@ -1,0 +1,28 @@
+{
+  "name": "symfony_projet",
+  "version": "1.0.0",
+  "description": "symfony_projet ==============",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "babel-loader": "^7.1.4",
+    "bootstrap": "4.1.0",
+    "bxslider": "git+https://github.com/stevenwanderski/bxslider-4.git",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.20.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^7.0.1",
+    "webpack-notifier": "^1.6.0"
+  }
+}

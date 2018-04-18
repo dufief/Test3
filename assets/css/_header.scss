@@ -1,0 +1,63 @@
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------   Header (MaPageBundle)   ----------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* Forced opacity in background color*/
+  background-color: rgba(245, 179, 53, 0.5);
+  /* Tempo appearance and disappear of header*/
+  transition: top 0.5s ease-in-out;
+}
+/* Make disappear the header */
+.nav-up {
+  top: -100px;
+}
+
+.header-img {
+  height: 63px;
+  width: 183px;
+  position: absolute;
+  left: 28px;
+  top: 27px;
+ // background: url(../img/LaPiscine_Bordeaux.png) no-repeat;
+  background: url(../../src/ArticleBundle/Resources/public/img/LaPiscine_Bordeaux.png);
+}
+
+/*--------------------------------------------------- NavBar ----------------------------------------------------------*/
+
+.navbar-menu {
+  float: right;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.navbar-menu .container-ul {
+  display: flex;
+}
+.navbar-menu .container-ul .menu {
+  flex: 1;
+  text-align: center;
+  list-style: none;
+}
+.navbar-menu .container-ul .menu .menu-lien {
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  transition: 1s;
+}
+.navbar-menu .container-ul .menu .menu-lien:hover {
+  font-size: 30px;
+  color: black;
+}

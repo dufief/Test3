@@ -1,0 +1,34 @@
+{% extends "@MaPage/base.html.twig" %}
+
+{%  block body %}
+
+    <div class="container-article">
+        <article class="article-index article-jeux">
+            <p class="description-article">Mon jeux du moment</p>
+            <div class="article-img-jeux"><img class="img-jeux" src="{{ asset('bundles/mapage/img/league-of-legends-logo.png') }}" alt=""></div>
+        </article>
+        <div class="small-articles">
+            <div class="article-small"><img src="{{ asset('bundles/mapage/img/shen.png') }}" alt=""><p class="texte-img">SHEN</p><p class="description">Mon support</p></div>
+            <div class="article-small"><img src="{{ asset('bundles/mapage/img/fizz.jpg') }}" alt=""><p class="texte-img">FIZZ</p><p class="description">Mon mid</p></div>
+
+            <div class="article-small"><img src="{{ asset('bundles/mapage/img/Leona.jpg') }}" alt=""><p class="texte-img">LEONA</p><p class="description">Mon support</p></div>
+        </div>
+    </div>
+
+    <div class="container-article">
+        <article class="article-index article-mangas">
+            <p class="description-article">Mon manga du moment</p>
+            <div class="article-img-mangas"><img src="" alt=""></div>
+        </article>
+
+
+
+        <div class="small-articles">
+            <div class="article-small"><img src="{{ asset('bundles/mapage/img/soul.jpg') }}" alt=""><p class="texte-img-soul">SOUL</p></div>
+            <div class="article-small"><img src="{{ asset('bundles/mapage/img/black-star.png') }}" alt=""><p class="texte-img-bStar">BLACK STAR</p></div>
+            <div class="article-small"><img src="{{ asset('bundles/mapage/img/maka.jpg') }}" alt=""><p class="texte-img-maka">MAKA</p></div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,101 @@
+{% extends "@MaPage/base.html.twig" %}
+    {% block stylesheet %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    {% endblock %}
+
+    {% block title %}
+    <title>Mangas</title>
+    {% endblock %}
+
+
+{% block body %}
+
+
+
+
+<!-- mise en place du Slider(Carrousel) -->
+
+<div class="container-slider my_slider">
+    <div class="slider"> <!-- Class use in bxSlider.js-->
+        <div><img src="{{ asset('bundles/article/img/slider/fullmetal.png') }}" alt=""></div>
+        <div><img src="{{ asset('bundles/article/img/slider/onepunch-slider.jpg') }}" alt=""></div>
+        <div><img src="{{ asset('bundles/article/img/slider/Last_Hero_Inuyashiki.jpg') }}" alt=""></div>
+        <div><img src="{{ asset('bundles/article/img/slider/kill-la-kill.jpg') }}" alt=""></div>
+        <div><img src="{{ asset('bundles/article/img/slider/my-hero-academia.jpg') }}" alt=""></div>
+        <div><img src="{{ asset('bundles/article/img/slider/avatar.jpg') }}" alt=""></div>
+        <div><img src="{{ asset('test/assets/img/slider/Titan.jpg') }}" alt=""></div>
+        <div><img src="{{ asset('bundles/article/img/slider/samurai-champloo.jpg') }}') }}" alt=""></div>
+        <div><img src="{{ asset('bundles/article/img/slider/death-note.jpg') }}" alt=""></div>
+        <div><img src="{{ asset('bundles/article/img/slider/Psycho-Pass.jpg') }}" alt=""></div>
+    </div>
+</div>
+
+<h1 id="test_pagination" class="title">MES MANGAS ANIMES</h1>
+
+<a href="#" class="scrollup">Scroll</a> <!-- lien for back up top (.scrollup use in main.js)  -->
+
+<a class="create_article" href="{{ path('article_form') }}">Ajouter un mangas <span class="count_article">({{ articles.getTotalItemCount }} Articles en ligne )</span></a>
+
+
+    <!-- Positioning article  -->
+<div class="container container-mangas">
+    <div class="row">
+        {% for article in articles %}
+        <article class="col-sm-4 ">
+            <div>
+                <h1 class="title_article">{{ article.title}}</h1>
+            </div>
+            <div>
+                <div class="img_article" style="
+                    background-image: url('{{ asset('bundles/article/img/uploads/' ~ article.img) }}'); /* Management img */
+                        background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                 ">
+
+                </div>
+            </div>
+            <div>
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title title_article_h4">
+                                <a class="btn btn-primary btn-sm lien_synopsis" data-toggle="collapse" href="#collapse1-{{ article.id }}" role="button">Synopsis</a> <!-- .lien_synopsis use in main.js-->
+                                <a class="btn btn-info btn-sm" href="{{ path('article_form_update', {id : article.id }) }}" role="button">Modifier</a>
+                                <a class="btn btn-warning btn-sm" href="{{ path('article_form_remove', {id : article.id }) }}" role="button">Supprimer</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1-{{ article.id }}" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>{{ article.synopsis }}</p>
+                                <p>De: {{ article.auteur }}</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+             </div>
+
+        </article>
+
+
+
+        {% endfor %}
+
+    </div>
+</div>
+    <div class="navigation my_pagination">
+        {{ knp_pagination_render(articles) }}
+    </div>
+
+
+
+{% endblock %}
+
+
+
+
+

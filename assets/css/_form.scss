@@ -1,0 +1,55 @@
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------   Form (ArticleBundle - form.html.twig)   ---------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.title-form{
+  text-align: center;
+  margin-top: 120px;
+}
+.container_form{
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: gainsboro;
+  margin-bottom: 120px;
+}
+
+.div_form{
+  width: 80%;
+  margin-left: auto;
+  padding: 20px 0 20px 0;
+}
+
+.label_label{
+
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+.widget_widget{
+
+  width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div_form_submit{
+  display: flex;
+  justify-content: center;
+}
+.widget_submit{
+  margin: 20px 0 20px 0;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.widget_synopsis{
+  height: 200px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
